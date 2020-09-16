@@ -139,7 +139,7 @@ while True:
             else:
                 rc = os.fork()
                 if rc==0:
-                    if response!="":
+                    if commands!="":
                         os.close(1)
                         sys.stdout=open(io[1],"w")
                         os.set_inheritable(1,True)
